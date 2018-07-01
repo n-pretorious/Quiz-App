@@ -1,18 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/android_img"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Brain Buster!!"
+            android:textAllCaps="true"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/qn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Which environment is used for  android development? "
+            android:paddingLeft="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SDK"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APK"
+                android:textSize="16sp"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JDK"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="IDE"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/qn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="2. Android calculates the pixels density of mobile (currently using the app) using unit of measurement? " />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CP"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="SP"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DP" />
+
+            <CheckBox
+                android:id="@+id/checkBox2_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GP"
+                android:layout_marginLeft="50dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/qn3"
+            android:layout_width="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="3. Android sizes the fonts of mobile (currently using the app) using unit of measurement? " />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SP"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DP"
+                android:layout_marginLeft="50dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CP"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox3_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GP"
+                android:layout_marginLeft="50dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/qn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="4. In android studio, which tab is used to show errors? " />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox4_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="logcat"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox4_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="memory"
+                android:layout_marginLeft="50dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <CheckBox
+                android:id="@+id/checkBox4_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADB logs"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox4.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="CPU"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/qn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="5. Button option can be choose from the palette category? " />
+
+        <CheckBox
+            android:id="@+id/checkBox5_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textfields"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="containers"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="widgets"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="layouts"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="6. By default in android studio during app development, the file that holds information about app's fundamental features and components is? " />
+
+        <CheckBox
+            android:id="@+id/checkBox6_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AndroidManifest.xml"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox6_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="res/values"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox6_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Build.gradle"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox6_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="res/layout"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="7. By default in android studio during app development, the file that holds information about SDK, versions, application Id, etc. is? " />
+
+        <CheckBox
+            android:id="@+id/checkBox7_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="Build.gradle"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox7_2"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="res/values"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox7_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="res/layout"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox7_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AndroidManifest.xml"
+            android:paddingLeft="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/qn8"
+            android:layout_width="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="8. Space of widgets can be customized using"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="padding"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="margins"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1_3"
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="weight"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="height"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp">
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:onClick="submitAnswers"/>
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:onClick="reset"
+                android:text="Reset" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
